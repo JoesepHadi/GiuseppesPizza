@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at Giuseppe's Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #008C45; 
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            padding-left: 15px;
+        }
+
+        header img {
+            height: 80px;
+            width: auto;
+        }
+
+        nav {
+            background-color: #CD212A; 
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-content h2 {
+            font-size: 2.5em;
+            color: #008C45;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.3em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .job-listings {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .job-listing {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #CD212A;
+            border-radius: 8px;
+        }
+
+        .job-listing h3 {
+            margin: 0;
+            color: #CD212A;
+        }
+
+        .job-listing p {
+            margin: 5px 0 10px;
+        }
+
+        .btn-apply {
+            background-color: #CD212A;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .btn-apply:hover {
+            background-color: #008C45;
+        }
+
+        footer {
+            background-color: #CD212A; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .application-form {
+            text-align: left;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #CD212A;
+            border-radius: 8px;
+            background-color: #F4F5F0;
+        }
+
+        .application-form h3 {
+            color: #008C45;
+            margin-top: 0;
+        }
+
+        .application-form label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .application-form input,
+        .application-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .application-form button {
+            background-color: #008C45;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .application-form button:hover {
+            background-color: #CD212A;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="../images/logo.jpg" alt="Giuseppe's Pizza Logo">
+        <h1>Giuseppe's Pizza</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./careers.html">Careers</a>
+    </nav>
+
+    <div class="main-content">
+        <h2>Join Our Team!</h2>
+        <p>At Giuseppe's Pizza, we are always looking for passionate and talented individuals to join our team. Whether you’re a skilled chef, an enthusiastic server, or a delivery expert, we have a place for you!</p>
+        
+        <div class="job-listings">
+            <div class="job-listing">
+                <h3>Pizza Chef</h3>
+                <p>Location: South Dublin</p>
+                <p>We are seeking an experienced pizza chef who is passionate about creating delicious, hand-tossed pizzas.</p>
+                <button class="btn-apply">Apply Now</button>
+            </div>
+            <div class="job-listing">
+                <h3>Delivery Driver</h3>
+                <p>Location: South Dublin</p>
+                <p>Deliver piping-hot pizzas to our customers while providing excellent service. A valid driver’s license is required.</p>
+                <button class="btn-apply">Apply Now</button>
+            </div>
+            <div class="job-listing">
+                <h3>Front-of-House Staff</h3>
+                <p>Location: South Dublin</p>
+                <p>Provide a warm welcome to our customers and ensure a great dining experience.</p>
+                <button class="btn-apply">Apply Now</button>
+            </div>
+        </div>
+
+        <div class="application-form">
+            <h3>Apply Now</h3>
+            <form action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="position">Position Applying For</label>
+                <input type="text" id="position" name="position" required>
+                
+                <label for="message">Why do you want to join us?</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Giuseppe's Pizza. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

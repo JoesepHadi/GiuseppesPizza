@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Giuseppe's Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #008C45;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            padding-left: 15px;
+        }
+
+        header img {
+            height: 80px;
+            width: auto;
+        }
+
+        nav {
+            background-color: #CD212A;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            font-size: 2.5em;
+            color: #008C45;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F4F5F0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            font-size: 1.8em;
+            color: #CD212A;
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #CD212A;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #008C45;
+        }
+
+        .hours {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F4F5F0;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        .hours h4 {
+            color: #CD212A;
+        }
+
+        .location img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #CD212A;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="../images/logo.jpg" alt="Giuseppe's Pizza Logo">
+        <h1>Giuseppe's Pizza</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./careers.html">Careers</a>
+    </nav>
+
+    <div class="main-content">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us through any of the channels below or fill out the contact form.</p>
+
+        <div class="contact-info">
+            <p><strong>Instagram:</strong> Giuseppe's Pizza</p>
+            <p><strong>Facebook:</strong> Giuseppe's Pizza</p>
+            <p><strong>Phone:</strong> +353 87 123 4567</p>
+            <p><strong>Email:</strong> contact@giuseppespizza.com</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="location">
+            <h3>Where We're Located</h3>
+            <img src="../images/location.jpg" alt="Location Map">
+        </div>
+
+        <div class="hours">
+            <h4>Our Hours of Operation</h4>
+            <ul>
+                <li>Monday to Thursday: 11:00 AM - 9:00 PM</li>
+                <li>Friday & Saturday: 11:00 AM - 11:00 PM</li>
+                <li>Sunday: 12:00 PM - 8:00 PM</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Giuseppe's Pizza. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
